@@ -1,0 +1,30 @@
+{
+  "name": "pdf-hyperlink-editor-client",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "postinstall": "node -e \"const fs=require('fs');const src='node_modules/pdfjs-dist/build/pdf.worker.min.mjs';const dest='public/pdf.worker.min.mjs';if(fs.existsSync(src))fs.copyFileSync(src,dest);\""
+  },
+  "dependencies": {
+    "konva": "^9.3.14",
+    "pdfjs-dist": "^4.4.168",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-konva": "^18.2.10",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^9.0.8",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.4"
+  }
+}
